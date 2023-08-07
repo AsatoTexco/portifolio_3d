@@ -1,0 +1,163 @@
+ *{
+  padding: 0;
+  margin: 0;
+  border:0;
+  color: white;
+
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Kanit', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+ }
+
+ :root{
+
+  --azul1: #01060D;
+  --azul2: #011526;
+  --azul3: #012840;
+  --azul4: #20638C;
+  --azul5: #105773;
+
+
+  --move_low: 75px;
+  --move_low_reverse: -75px;
+
+
+  /* .Pared-de-cemento-enlucido-y-pintado-de-azul,-fondo-abstracto-azul-1-hex { color: #01060D; }
+     .Pared-de-cemento-enlucido-y-pintado-de-azul,-fondo-abstracto-azul-2-hex { color: #011526; }
+     .Pared-de-cemento-enlucido-y-pintado-de-azul,-fondo-abstracto-azul-3-hex { color: #012840; }
+     .Pared-de-cemento-enlucido-y-pintado-de-azul,-fondo-abstracto-azul-4-hex { color: #20638C; }
+     .Pared-de-cemento-enlucido-y-pintado-de-azul,-fondo-abstracto-azul-5-hex { color: #105773; } */
+
+}
+
+
+
+ body{
+  width: 100vw;
+  overflow-x: hidden;
+ }
+ canvas{
+  position: fixed;
+  top: 0;
+  left: 0;
+ }
+
+ 
+
+ main{
+
+  position: relative;
+  width: 100vw;
+  height: 100vh ;
+  pointer-events: none;
+
+ }
+section{
+  width: 100vw;
+  
+  height: 100vh;
+}
+.home{
+   position: relative;
+   display: flex;
+   align-items: center;
+}
+.apresentacao{
+  
+  padding: 20px;
+  height: 30vh;
+  width: 600px;
+  margin-left: 60px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.514);
+
+}
+.aranha_robo{
+
+  width: 100vw;
+  
+}
+ 
+ 
+
+/* ============  effect  ================== */
+
+
+[animation="left"]{
+
+  transform: translateX(var(--move_low_reverse)) ;
+
+}
+
+[animation="right"]{
+
+ 
+  transform: translateX(var(--move_low)) ;
+   
+
+}
+[animation="top"]{
+  
+  transform: translateY(var(--move_low_reverse)) ;
+
+
+}
+[animation="bottom"]{
+  
+  transform: translateY(var(--move_low)) ;
+
+
+}
+
+
+.move    {
+  opacity: 0;
+  transition: all 1s;
+  position: relative;
+}
+
+.show{
+  transform: translateX(-0) ;
+  
+  opacity: 1;
+}
+
+/* ============================================== */
+
+
+.tecnologias{
+    background-color: #01060d33;
+}
+.about_space{
+  display: flex;
+  align-items: center;
+   
+}
+.s2{
+  margin-top: 50vh;
+}
+.about{
+  position: fixed;
+  top: 35%;
+
+  
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 15px;
+  padding: 20px;
+  left: 5%;
+  background-color: #01060d6c;
+  height: 30vh;
+  width: 600px;
+}
+.teste{
+  height: 1px;
+  width: 1px;
+}
